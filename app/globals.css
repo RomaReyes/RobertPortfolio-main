@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-orbitron), ui-sans-serif, sans-serif;
+  --font-tech: var(--font-rajdhani), ui-sans-serif, sans-serif;
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+/*
+ * PALETA DEL PORTAFOLIO (tema oscuro único)
+ *  --primary  → cian neón   (#00f3ff)
+ *  --accent   → púrpura     (#8b5cf6)
+ *  --background / --card → fondos profundos
+ */
+:root {
+  color-scheme: dark;
+  --background: #07090e;
+  --foreground: #e6edf7;
+  --card: #0b0f19;
+  --card-foreground: #e6edf7;
+  --popover: #0b0f19;
+  --popover-foreground: #e6edf7;
+  --primary: #00f3ff;
+  --primary-foreground: #07090e;
+  --secondary: #121829;
+  --secondary-foreground: #e6edf7;
+  --muted: #121829;
+  --muted-foreground: #8b97ad;
+  --accent: #8b5cf6;
+  --accent-foreground: #ffffff;
+  --destructive: #f43f5e;
+  --border: rgb(255 255 255 / 0.1);
+  --input: rgb(255 255 255 / 0.15);
+  --ring: #00f3ff;
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Rejilla tipo blueprint en cian + halos de color */
+    background-image:
+      radial-gradient(ellipse 60% 40% at 15% 0%, rgb(0 243 255 / 0.08), transparent 70%),
+      radial-gradient(ellipse 50% 40% at 90% 30%, rgb(139 92 246 / 0.1), transparent 70%),
+      linear-gradient(rgb(0 243 255 / 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(0 243 255 / 0.045) 1px, transparent 1px);
+    background-size:
+      100% 100%,
+      100% 100%,
+      40px 40px,
+      40px 40px;
+    background-attachment: fixed;
+  }
+}
