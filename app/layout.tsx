@@ -9,9 +9,9 @@ const orbitron = Orbitron({ subsets: ['latin'], variable: '--font-orbitron' })
 const rajdhani = Rajdhani({ subsets: ['latin'], weight: ['500', '600', '700'], variable: '--font-rajdhani' })
 
 export const metadata: Metadata = {
-  title: 'Robert dev · Game Creator | Portafolio de Desarrollo de Videojuegos',
+  title: 'Robert Gamedev · Game Creator | Portafolio de Desarrollo de Videojuegos',
   description:
-    'Portafolio de Robert Dev, desarrollador de videojuegos especializado en Unreal Engine 5 y Unity . Proyectos, habilidades y contacto.',
+    'Portafolio de Robert GameDev, desarrollador de videojuegos especializado en Unreal Engine 5 y Unity . Proyectos, habilidades y contacto.',
   generator: 'v0.app',
   icons: {
     icon: [
