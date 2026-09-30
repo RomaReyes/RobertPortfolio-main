@@ -39,15 +39,16 @@ export const profile = {
   email: 'robertjimenezreyes64@gmail.com',
   /** Texto breve de la sección "Sobre Mí" (pie de página). */
   about:
-    'Desarrollador de videojuegos con 2 años de experiencia haciendo juegos entrenidos y jugables en Unreal y Unity. Me especializo en gameplay programming, sistemas de IA y optimización de rendimiento en producciones comerciales.',
-  location: 'Santo Domingo Oeste, Republica Dominicana · Remoto',
+    'Desarrollador de videojuegos con 2 años de experiencia, Me especializo con Unreal y Unity. en gameplay programming, tambien tengo habilidades para el 3D utilizando el programa Blender. Me apasiona crear experiencias de juego emocionantes.'
+
+  ,location: 'Santo Domingo Oeste, Republica Dominicana · Remoto',
   /**
    * Foto de la sección "Sobre Mí". Sube tu imagen a /public/profile/
    * y cambia `src` (ej. "/profile/mi-foto.jpg"). Se recorta en formato cuadrado.
    */
   photo: {
     src: '/profile/foto-perfil.png',
-    alt: 'Foto de perfil de Alex, desarrollador de videojuegos',
+    alt: 'Foto de perfil de Robert, desarrollador de videojuegos',
   },
 }
 
